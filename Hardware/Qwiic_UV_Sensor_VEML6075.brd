@@ -42,7 +42,7 @@
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
@@ -153,6 +153,9 @@
 <text x="2.413" y="1.27" size="1.27" layer="16" font="vector" ratio="15" rot="MR0" align="center">v10</text>
 <text x="15.24" y="-7.62" size="1.778" layer="51" font="vector" ratio="10">Jim Lindblom</text>
 <text x="13.97" y="-10.16" size="1.778" layer="51" font="vector" ratio="10">Andy England</text>
+<dimension x1="2.54" y1="22.86" x2="22.86" y2="22.86" x3="12.7" y3="27.94" textsize="1.778" layer="47" unit="inch"/>
+<dimension x1="0" y1="25.4" x2="25.4" y2="25.4" x3="12.7" y3="30.48" textsize="1.778" layer="47" unit="inch"/>
+<dimension x1="0" y1="0" x2="0" y2="25.4" x3="-2.54" y3="12.7" textsize="1.778" layer="47" unit="inch"/>
 </plain>
 <libraries>
 <library name="SparkFun-Aesthetics">
@@ -983,42 +986,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </library>
 <library name="Qwiic_UV_Sensor_VEML6075">
 <packages>
-<package name="VEML6075_A3OP">
-<description>&lt;h3&gt;VEML6075 A3OP&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Dimensions: 2.0 x 1.25 mm&lt;/li&gt;
-&lt;li&gt;Pin Count: 4-pin&lt;/li&gt;
-&lt;li&gt;Pitch: 0.7mm&lt;/li&gt;
-&lt;/ul&gt;
-&lt;a href=http://www.vishay.com/docs/84304/veml6075.pdf&gt;Datasheet&lt;/a&gt;</description>
-<wire x1="-1" y1="0.625" x2="-1" y2="-0.625" width="0.0762" layer="51"/>
-<wire x1="-1" y1="-0.625" x2="1" y2="-0.625" width="0.0762" layer="51"/>
-<wire x1="1" y1="-0.625" x2="1" y2="0.625" width="0.0762" layer="51"/>
-<wire x1="1" y1="0.625" x2="-1" y2="0.625" width="0.0762" layer="51"/>
-<rectangle x1="-0.97" y1="0.175" x2="-0.55" y2="0.525" layer="51"/>
-<rectangle x1="0.55" y1="0.175" x2="0.97" y2="0.525" layer="51" rot="R180"/>
-<rectangle x1="-0.97" y1="-0.525" x2="-0.55" y2="-0.175" layer="51"/>
-<smd name="1" x="-0.95" y="0.35" dx="0.9" dy="0.35" layer="1"/>
-<smd name="4" x="0.95" y="0.35" dx="0.9" dy="0.35" layer="1" rot="R180"/>
-<smd name="2" x="-0.95" y="-0.35" dx="0.9" dy="0.35" layer="1"/>
-<smd name="3" x="0.9" y="-0.35" dx="1" dy="0.35" layer="1"/>
-<rectangle x1="0.45" y1="-0.525" x2="0.97" y2="-0.175" layer="51"/>
-<text x="-1.6" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;Name</text>
-<text x="1.6" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;Value</text>
-<circle x="-1.2" y="0.95" radius="0.1905" width="0" layer="21"/>
-<wire x1="1.1" y1="0.725" x2="-1.1" y2="0.725" width="0.127" layer="21"/>
-<wire x1="-1.1" y1="-0.725" x2="1.1" y2="-0.725" width="0.127" layer="21"/>
-<wire x1="1.1" y1="0.725" x2="1.1" y2="0.625" width="0.127" layer="21"/>
-<wire x1="1.1" y1="0.025" x2="1.1" y2="-0.025" width="0.127" layer="21"/>
-<wire x1="-1.1" y1="-0.025" x2="-1.1" y2="0.025" width="0.127" layer="21"/>
-<wire x1="-1.1" y1="-0.725" x2="-1.1" y2="-0.625" width="0.127" layer="21"/>
-<wire x1="1.1" y1="-0.625" x2="1.1" y2="-0.725" width="0.127" layer="21"/>
-<wire x1="-1.1" y1="0.625" x2="-1.1" y2="0.725" width="0.127" layer="21"/>
-<wire x1="-1.397" y1="0.635" x2="-0.508" y2="0.635" width="0.002540625" layer="41"/>
-<wire x1="1.397" y1="-0.635" x2="0.508" y2="-0.635" width="0.002540625" layer="41"/>
-<wire x1="1.397" y1="0.635" x2="0.508" y2="0.635" width="0.002540625" layer="41"/>
-<wire x1="-1.397" y1="-0.635" x2="-0.508" y2="-0.635" width="0.002540625" layer="41"/>
-</package>
 <package name="_VEML60750">
 <rectangle x1="1.75" y1="0.63" x2="1.85" y2="0.68" layer="21"/>
 <rectangle x1="2.7" y1="0.63" x2="2.8" y2="0.68" layer="21"/>
@@ -3921,6 +3888,59 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package>
 </packages>
 </library>
+<library name="SparkFun-Sensors">
+<description>&lt;h3&gt;SparkFun Sensors&lt;/h3&gt;
+This library contains sensors- accelerometers, gyros, compasses, magnetometers, light sensors, imagers, temp sensors, etc.
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application.
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="VEML6075_A3OP">
+<description>&lt;h3&gt;VEML6075 A3OP&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Dimensions: 2.0 x 1.25 mm&lt;/li&gt;
+&lt;li&gt;Pin Count: 4-pin&lt;/li&gt;
+&lt;li&gt;Pitch: 0.7mm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;a href=http://www.vishay.com/docs/84304/veml6075.pdf&gt;Datasheet&lt;/a&gt;</description>
+<wire x1="-1" y1="0.625" x2="-1" y2="-0.625" width="0.0762" layer="51"/>
+<wire x1="-1" y1="-0.625" x2="1" y2="-0.625" width="0.0762" layer="51"/>
+<wire x1="1" y1="-0.625" x2="1" y2="0.625" width="0.0762" layer="51"/>
+<wire x1="1" y1="0.625" x2="-1" y2="0.625" width="0.0762" layer="51"/>
+<rectangle x1="-0.97" y1="0.175" x2="-0.55" y2="0.525" layer="51"/>
+<rectangle x1="0.55" y1="0.175" x2="0.97" y2="0.525" layer="51" rot="R180"/>
+<rectangle x1="-0.97" y1="-0.525" x2="-0.55" y2="-0.175" layer="51"/>
+<smd name="1" x="-0.95" y="0.35" dx="0.9" dy="0.35" layer="1"/>
+<smd name="4" x="0.95" y="0.35" dx="0.9" dy="0.35" layer="1" rot="R180"/>
+<smd name="2" x="-0.95" y="-0.35" dx="0.9" dy="0.35" layer="1"/>
+<smd name="3" x="0.9" y="-0.35" dx="1" dy="0.35" layer="1"/>
+<rectangle x1="0.45" y1="-0.525" x2="0.97" y2="-0.175" layer="51"/>
+<text x="-1.6" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;Name</text>
+<text x="1.6" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;Value</text>
+<circle x="-1.2" y="0.95" radius="0.1905" width="0" layer="21"/>
+<wire x1="1.1" y1="0.725" x2="-1.1" y2="0.725" width="0.127" layer="21"/>
+<wire x1="-1.1" y1="-0.725" x2="1.1" y2="-0.725" width="0.127" layer="21"/>
+<wire x1="1.1" y1="0.725" x2="1.1" y2="0.625" width="0.127" layer="21"/>
+<wire x1="1.1" y1="0.025" x2="1.1" y2="-0.025" width="0.127" layer="21"/>
+<wire x1="-1.1" y1="-0.025" x2="-1.1" y2="0.025" width="0.127" layer="21"/>
+<wire x1="-1.1" y1="-0.725" x2="-1.1" y2="-0.625" width="0.127" layer="21"/>
+<wire x1="1.1" y1="-0.625" x2="1.1" y2="-0.725" width="0.127" layer="21"/>
+<wire x1="-1.1" y1="0.625" x2="-1.1" y2="0.725" width="0.127" layer="21"/>
+<wire x1="-1.397" y1="0.635" x2="-0.508" y2="0.635" width="0.002540625" layer="41"/>
+<wire x1="1.397" y1="-0.635" x2="0.508" y2="-0.635" width="0.002540625" layer="41"/>
+<wire x1="1.397" y1="0.635" x2="0.508" y2="0.635" width="0.002540625" layer="41"/>
+<wire x1="-1.397" y1="-0.635" x2="-0.508" y2="-0.635" width="0.002540625" layer="41"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3930,29 +3950,39 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="SparkFun-2-layer-PCBWay-LIMIT">
-<description language="en">&lt;b&gt;SparkFun 2 Layer Design Rule Checks - Limits for PCBWay&lt;/b&gt;
+<designrules name="SparkFun-2-layer-TIGHT">
+<description language="en">&lt;b&gt;SparkFun 2 Layer Design Rule Checks - STANDARD/TIGHT/FAB-LIMIT&lt;/b&gt;
 &lt;p&gt;
- If you're ordering from PCBWay, these are the 'free' minimums.</description>
+These rules have been curated by SparkFuns DFM commitee. After doing much research, communicating with our multiple fab houses, and getting quotes of various designs, we have compiled three DRU files. 
+&lt;p&gt;
+&lt;b&gt;STANDARD:&lt;/b&gt; This is more of a &quot;best case scenario&quot; set of limitations. If your design has the space, and/or you have the time to work within these parameters, please do. Larger trace width and clearance makes for easier visual inspection of the PCB while troubleshooting (useful in production and to the end user). It also allows for better ability to hack a trace (if you are crazy enough to scrape away the mask and solder to a trace). Another thing to keep in mind is that more metal is just more robust. 
+&lt;p&gt;
+&lt;b&gt;TIGHT:&lt;/b&gt; This is where cost comes into play. We have found that most fab houses begin to add extra charges when you go smaller than these specs. In some cases, going to less than 15 mil trace can increase the cost by 10%. (This is why we have set the min drill on this DRU to 15 mil) Same story for traces thinner than 7 mil. To avoid those extra charges, then stay within the rules of this DRU.
+&lt;p&gt;
+&lt;b&gt;FAB-LIMIT:&lt;/b&gt; These set of rules are at the very limit of most fab houses capabilities. You will pay more for these specs, and it should be used on designs that have a darned good reason to need 4 mil vias and 4 mil traces.
+&lt;p&gt;
+**NOTE Clearance, Distance, Sizes, and Restring are all set to different limits in each of these three DRU files. Please compare the files within the CAM job editor window of eagle to see all the numbers.
+&lt;p&gt;
+***NOTE, Please set your Net Classes to default (0mil for all settings), so that it won't effect the DRC when you run it with these settings.</description>
 <param name="layerSetup" value="(1*16)"/>
 <param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
 <param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
-<param name="mdWireWire" value="6mil"/>
-<param name="mdWirePad" value="6mil"/>
-<param name="mdWireVia" value="6mil"/>
-<param name="mdPadPad" value="6mil"/>
-<param name="mdPadVia" value="6mil"/>
-<param name="mdViaVia" value="6mil"/>
-<param name="mdSmdPad" value="6mil"/>
-<param name="mdSmdVia" value="6mil"/>
-<param name="mdSmdSmd" value="6mil"/>
+<param name="mdWireWire" value="7mil"/>
+<param name="mdWirePad" value="7mil"/>
+<param name="mdWireVia" value="7mil"/>
+<param name="mdPadPad" value="7mil"/>
+<param name="mdPadVia" value="7mil"/>
+<param name="mdViaVia" value="7mil"/>
+<param name="mdSmdPad" value="7mil"/>
+<param name="mdSmdVia" value="7mil"/>
+<param name="mdSmdSmd" value="7mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="6mil"/>
-<param name="mdDrill" value="6mil"/>
+<param name="mdCopperDimension" value="7mil"/>
+<param name="mdDrill" value="7mil"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="6mil"/>
-<param name="msDrill" value="0.3mm"/>
+<param name="msWidth" value="7mil"/>
+<param name="msDrill" value="15mil"/>
 <param name="msMicroVia" value="9.99mm"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
@@ -3972,9 +4002,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <param name="rlMaxViaOuter" value="20mil"/>
 <param name="rlMinViaInner" value="7mil"/>
 <param name="rlMaxViaInner" value="20mil"/>
-<param name="rlMinMicroViaOuter" value="7mil"/>
+<param name="rlMinMicroViaOuter" value="4mil"/>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
-<param name="rlMinMicroViaInner" value="7mil"/>
+<param name="rlMinMicroViaInner" value="4mil"/>
 <param name="rlMaxMicroViaInner" value="20mil"/>
 <param name="psTop" value="-1"/>
 <param name="psBottom" value="-1"/>
@@ -4104,7 +4134,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </autorouter>
 <elements>
 <element name="FRAME1" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="FRAME-LETTER" x="-11.43" y="-7.62"/>
-<element name="U1" library="Qwiic_UV_Sensor_VEML6075" package="VEML6075_A3OP" value="VEML6075" x="12.7" y="12.7"/>
+<element name="U1" library="SparkFun-Sensors" package="VEML6075_A3OP" value="VEML6075" x="12.7" y="12.7">
+<attribute name="PROD_ID" value="IC-14149" x="12.7" y="12.7" size="1.778" layer="27" display="off"/>
+</element>
 <element name="R3" library="SparkFun-Resistors" package="0603" value="1k" x="2.54" y="2.54">
 <attribute name="PROD_ID" value="RES-07856" x="2.54" y="10.16" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
@@ -4165,11 +4197,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="J3" pad="2"/>
 <contactref element="J4" pad="2"/>
 <wire x1="20.32" y1="12.2" x2="19.05" y2="12.2" width="0.2032" layer="1"/>
-<via x="19.05" y="12.2" extent="1-16" drill="0.3048"/>
+<via x="19.05" y="12.2" extent="1-16" drill="0.381"/>
 <wire x1="19.05" y1="12.2" x2="15.85" y2="12.2" width="0.2032" layer="16"/>
 <wire x1="15.85" y1="12.2" x2="15" y2="13.05" width="0.2032" layer="16"/>
 <wire x1="5.08" y1="13.2" x2="6.35" y2="13.2" width="0.2032" layer="1"/>
-<via x="6.35" y="13.2" extent="1-16" drill="0.3048"/>
+<via x="6.35" y="13.2" extent="1-16" drill="0.381"/>
 <wire x1="6.35" y1="13.2" x2="7.12" y2="13.2" width="0.2032" layer="16"/>
 <wire x1="7.12" y1="13.2" x2="7.27" y2="13.05" width="0.2032" layer="16"/>
 <wire x1="7.27" y1="13.05" x2="9.398" y2="13.05" width="0.2032" layer="16"/>
@@ -4178,7 +4210,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="12.7" y1="15.35" x2="14.7235" y2="13.3265" width="0.2032" layer="16"/>
 <wire x1="14.7235" y1="13.3265" x2="15" y2="13.05" width="0.2032" layer="16"/>
 <wire x1="3.39" y1="2.54" x2="5.08" y2="2.54" width="0.2032" layer="1"/>
-<via x="5.08" y="2.54" extent="1-16" drill="0.3048"/>
+<via x="5.08" y="2.54" extent="1-16" drill="0.381"/>
 <wire x1="5.08" y1="2.54" x2="5.08" y2="11.93" width="0.2032" layer="16"/>
 <wire x1="5.08" y1="11.93" x2="6.35" y2="13.2" width="0.2032" layer="16"/>
 <wire x1="11.43" y1="1.27" x2="9.398" y2="3.302" width="0.2032" layer="16"/>
@@ -4186,7 +4218,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="13.55" y1="14.605" x2="14.478" y2="14.605" width="0.2032" layer="1"/>
 <wire x1="14.478" y1="14.605" x2="14.7235" y2="14.3595" width="0.2032" layer="1"/>
 <wire x1="14.7235" y1="14.3595" x2="14.7235" y2="13.3265" width="0.2032" layer="1"/>
-<via x="14.7235" y="13.3265" extent="1-16" drill="0.35"/>
+<via x="14.7235" y="13.3265" extent="1-16" drill="0.381"/>
 <wire x1="14.7235" y1="13.3265" x2="14.447" y2="13.05" width="0.2032" layer="1"/>
 <wire x1="14.447" y1="13.05" x2="13.65" y2="13.05" width="0.2032" layer="1"/>
 </signal>
@@ -4209,14 +4241,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="0" y="0"/>
 <vertex x="0" y="25.4"/>
 </polygon>
-<via x="11.557" y="10.414" extent="1-16" drill="0.3048"/>
+<via x="11.557" y="10.414" extent="1-16" drill="0.381"/>
 <wire x1="11.75" y1="13.05" x2="10.9276" y2="13.05" width="0.254" layer="1"/>
 <wire x1="10.9276" y1="13.05" x2="10.8458" y2="13.1318" width="0.254" layer="1"/>
 <wire x1="11.75" y1="13.05" x2="12.6182" y2="13.05" width="0.254" layer="1"/>
 <wire x1="12.6182" y1="13.05" x2="12.7" y2="13.1318" width="0.254" layer="1"/>
-<via x="6.4516" y="14.1986" extent="1-16" drill="0.3048"/>
-<via x="18.9992" y="11.176" extent="1-16" drill="0.3048"/>
-<via x="10.8458" y="13.7414" extent="1-16" drill="0.3048"/>
+<via x="6.4516" y="14.1986" extent="1-16" drill="0.381"/>
+<via x="18.9992" y="11.176" extent="1-16" drill="0.381"/>
+<via x="10.8458" y="13.7414" extent="1-16" drill="0.381"/>
 </signal>
 <signal name="N$3">
 <contactref element="R3" pad="1"/>
@@ -4234,13 +4266,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="6.231" y1="12.2" x2="5.08" y2="12.2" width="0.2032" layer="1"/>
 <wire x1="6.381" y1="12.35" x2="6.231" y2="12.2" width="0.2032" layer="1"/>
 <wire x1="10.16" y1="15.66" x2="10.16" y2="12.35" width="0.2032" layer="1"/>
-<via x="10.16" y="12.35" extent="1-16" drill="0.3048"/>
+<via x="10.16" y="12.35" extent="1-16" drill="0.381"/>
 <wire x1="10.16" y1="12.35" x2="13.97" y2="12.35" width="0.2032" layer="16"/>
 <wire x1="13.97" y1="12.35" x2="15.16118125" y2="12.35" width="0.2032" layer="16"/>
 <wire x1="15.16118125" y1="12.35" x2="15.69218125" y2="11.819" width="0.2032" layer="16"/>
 <wire x1="16.883" y1="11.819" x2="17.272" y2="11.43" width="0.2032" layer="16"/>
 <wire x1="15.69218125" y1="11.819" x2="16.883" y2="11.819" width="0.2032" layer="16"/>
-<via x="17.272" y="11.43" extent="1-16" drill="0.3048"/>
+<via x="17.272" y="11.43" extent="1-16" drill="0.381"/>
 <wire x1="17.3640125" y1="11.43" x2="19.1340125" y2="13.2" width="0.2032" layer="1"/>
 <wire x1="19.1340125" y1="13.2" x2="20.32" y2="13.2" width="0.2032" layer="1"/>
 <wire x1="11.75" y1="12.35" x2="10.16" y2="12.35" width="0.2032" layer="1"/>
@@ -4271,7 +4303,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="JP1" pad="3"/>
 <wire x1="10.16" y1="17.36" x2="10.707" y2="17.907" width="0.2032" layer="1"/>
 <wire x1="10.707" y1="17.907" x2="11.684" y2="17.907" width="0.2032" layer="1"/>
-<via x="11.684" y="17.907" extent="1-16" drill="0.3048"/>
+<via x="11.684" y="17.907" extent="1-16" drill="0.381"/>
 <wire x1="11.684" y1="17.907" x2="11.684" y2="16.51" width="0.2032" layer="16"/>
 </signal>
 <signal name="N$5">
@@ -4279,7 +4311,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="R2" pad="2"/>
 <wire x1="15.24" y1="17.36" x2="14.693" y2="17.907" width="0.2032" layer="1"/>
 <wire x1="14.693" y1="17.907" x2="13.716" y2="17.907" width="0.2032" layer="1"/>
-<via x="13.716" y="17.907" extent="1-16" drill="0.3048"/>
+<via x="13.716" y="17.907" extent="1-16" drill="0.381"/>
 <wire x1="13.716" y1="17.907" x2="13.716" y2="16.51" width="0.2032" layer="16"/>
 </signal>
 </signals>
@@ -4291,10 +4323,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
 <errors>
-<approved hash="19,16,719abed146fe8bab"/>
-<approved hash="19,16,2f9aa0cd5ae2d7ab"/>
-<approved hash="19,16,47e7a4ac5c83bdd6"/>
-<approved hash="19,16,599faac850e7a1ae"/>
+<approved hash="19,16,95c05347af4a6bd7"/>
+<approved hash="19,16,a00f62909c9d5c18"/>
+<approved hash="19,16,87bcbd3b413779aa"/>
+<approved hash="19,16,620a64959a999e1c"/>
+<approved hash="23,1,e04257393516dd5c"/>
+<approved hash="23,1,80450d3e0221fc69"/>
 </errors>
 </board>
 </drawing>

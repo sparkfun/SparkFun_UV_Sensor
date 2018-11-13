@@ -15113,86 +15113,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
-<library name="Qwiic_UV_Sensor_VEML6075">
-<packages>
-<package name="VEML6075_A3OP">
-<description>&lt;h3&gt;VEML6075 A3OP&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;Dimensions: 2.0 x 1.25 mm&lt;/li&gt;
-&lt;li&gt;Pin Count: 4-pin&lt;/li&gt;
-&lt;li&gt;Pitch: 0.7mm&lt;/li&gt;
-&lt;/ul&gt;
-&lt;a href=http://www.vishay.com/docs/84304/veml6075.pdf&gt;Datasheet&lt;/a&gt;</description>
-<wire x1="-1" y1="0.625" x2="-1" y2="-0.625" width="0.0762" layer="51"/>
-<wire x1="-1" y1="-0.625" x2="1" y2="-0.625" width="0.0762" layer="51"/>
-<wire x1="1" y1="-0.625" x2="1" y2="0.625" width="0.0762" layer="51"/>
-<wire x1="1" y1="0.625" x2="-1" y2="0.625" width="0.0762" layer="51"/>
-<rectangle x1="-0.97" y1="0.175" x2="-0.55" y2="0.525" layer="51"/>
-<rectangle x1="0.55" y1="0.175" x2="0.97" y2="0.525" layer="51" rot="R180"/>
-<rectangle x1="-0.97" y1="-0.525" x2="-0.55" y2="-0.175" layer="51"/>
-<smd name="1" x="-0.95" y="0.35" dx="0.9" dy="0.35" layer="1"/>
-<smd name="4" x="0.95" y="0.35" dx="0.9" dy="0.35" layer="1" rot="R180"/>
-<smd name="2" x="-0.95" y="-0.35" dx="0.9" dy="0.35" layer="1"/>
-<smd name="3" x="0.9" y="-0.35" dx="1" dy="0.35" layer="1"/>
-<rectangle x1="0.45" y1="-0.525" x2="0.97" y2="-0.175" layer="51"/>
-<text x="-1.6" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;Name</text>
-<text x="1.6" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;Value</text>
-<circle x="-1.2" y="0.95" radius="0.1905" width="0" layer="21"/>
-<wire x1="1.1" y1="0.725" x2="-1.1" y2="0.725" width="0.127" layer="21"/>
-<wire x1="-1.1" y1="-0.725" x2="1.1" y2="-0.725" width="0.127" layer="21"/>
-<wire x1="1.1" y1="0.725" x2="1.1" y2="0.625" width="0.127" layer="21"/>
-<wire x1="1.1" y1="0.025" x2="1.1" y2="-0.025" width="0.127" layer="21"/>
-<wire x1="-1.1" y1="-0.025" x2="-1.1" y2="0.025" width="0.127" layer="21"/>
-<wire x1="-1.1" y1="-0.725" x2="-1.1" y2="-0.625" width="0.127" layer="21"/>
-<wire x1="1.1" y1="-0.625" x2="1.1" y2="-0.725" width="0.127" layer="21"/>
-<wire x1="-1.1" y1="0.625" x2="-1.1" y2="0.725" width="0.127" layer="21"/>
-<wire x1="-1.397" y1="0.635" x2="-0.508" y2="0.635" width="0.002540625" layer="41"/>
-<wire x1="1.397" y1="-0.635" x2="0.508" y2="-0.635" width="0.002540625" layer="41"/>
-<wire x1="1.397" y1="0.635" x2="0.508" y2="0.635" width="0.002540625" layer="41"/>
-<wire x1="-1.397" y1="-0.635" x2="-0.508" y2="-0.635" width="0.002540625" layer="41"/>
-</package>
-</packages>
-<symbols>
-<symbol name="VEML6075">
-<description>&lt;h3&gt;Vishay VEML6075&lt;/h3&gt;
-
-&lt;p&gt;UVA and UVB light sensor with I&lt;sup&gt;2&lt;/sup&gt;C interface.&lt;/p&gt;</description>
-<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.1778" layer="94"/>
-<wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.1778" layer="94"/>
-<wire x1="7.62" y1="-5.08" x2="7.62" y2="5.08" width="0.1778" layer="94"/>
-<wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.1778" layer="94"/>
-<pin name="VDD" x="-10.16" y="2.54" length="short"/>
-<pin name="GND" x="-10.16" y="-2.54" length="short"/>
-<pin name="SDA" x="10.16" y="2.54" length="short" rot="R180"/>
-<pin name="SCL" x="10.16" y="-2.54" length="short" rot="R180"/>
-<text x="-7.62" y="5.334" size="1.778" layer="95" font="vector">&gt;Name</text>
-<text x="-7.62" y="-5.334" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="VEML6075" prefix="U">
-<description>&lt;h3&gt;Vishay VEML6075&lt;/h3&gt;
-
-&lt;p&gt;UVA and UVB light sensor with I&lt;sup&gt;2&lt;/sup&gt;C interface.&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="VEML6075" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="VEML6075_A3OP">
-<connects>
-<connect gate="G$1" pin="GND" pad="1"/>
-<connect gate="G$1" pin="SCL" pad="3"/>
-<connect gate="G$1" pin="SDA" pad="2"/>
-<connect gate="G$1" pin="VDD" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="SparkFun">
 <packages>
 <package name="STAND-OFF">
@@ -16442,6 +16362,101 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-Sensors">
+<description>&lt;h3&gt;SparkFun Sensors&lt;/h3&gt;
+This library contains sensors- accelerometers, gyros, compasses, magnetometers, light sensors, imagers, temp sensors, etc.
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application.
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="VEML6075_A3OP">
+<description>&lt;h3&gt;VEML6075 A3OP&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Dimensions: 2.0 x 1.25 mm&lt;/li&gt;
+&lt;li&gt;Pin Count: 4-pin&lt;/li&gt;
+&lt;li&gt;Pitch: 0.7mm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;a href=http://www.vishay.com/docs/84304/veml6075.pdf&gt;Datasheet&lt;/a&gt;</description>
+<wire x1="-1" y1="0.625" x2="-1" y2="-0.625" width="0.0762" layer="51"/>
+<wire x1="-1" y1="-0.625" x2="1" y2="-0.625" width="0.0762" layer="51"/>
+<wire x1="1" y1="-0.625" x2="1" y2="0.625" width="0.0762" layer="51"/>
+<wire x1="1" y1="0.625" x2="-1" y2="0.625" width="0.0762" layer="51"/>
+<rectangle x1="-0.97" y1="0.175" x2="-0.55" y2="0.525" layer="51"/>
+<rectangle x1="0.55" y1="0.175" x2="0.97" y2="0.525" layer="51" rot="R180"/>
+<rectangle x1="-0.97" y1="-0.525" x2="-0.55" y2="-0.175" layer="51"/>
+<smd name="1" x="-0.95" y="0.35" dx="0.9" dy="0.35" layer="1"/>
+<smd name="4" x="0.95" y="0.35" dx="0.9" dy="0.35" layer="1" rot="R180"/>
+<smd name="2" x="-0.95" y="-0.35" dx="0.9" dy="0.35" layer="1"/>
+<smd name="3" x="0.9" y="-0.35" dx="1" dy="0.35" layer="1"/>
+<rectangle x1="0.45" y1="-0.525" x2="0.97" y2="-0.175" layer="51"/>
+<text x="-1.6" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;Name</text>
+<text x="1.6" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;Value</text>
+<circle x="-1.2" y="0.95" radius="0.1905" width="0" layer="21"/>
+<wire x1="1.1" y1="0.725" x2="-1.1" y2="0.725" width="0.127" layer="21"/>
+<wire x1="-1.1" y1="-0.725" x2="1.1" y2="-0.725" width="0.127" layer="21"/>
+<wire x1="1.1" y1="0.725" x2="1.1" y2="0.625" width="0.127" layer="21"/>
+<wire x1="1.1" y1="0.025" x2="1.1" y2="-0.025" width="0.127" layer="21"/>
+<wire x1="-1.1" y1="-0.025" x2="-1.1" y2="0.025" width="0.127" layer="21"/>
+<wire x1="-1.1" y1="-0.725" x2="-1.1" y2="-0.625" width="0.127" layer="21"/>
+<wire x1="1.1" y1="-0.625" x2="1.1" y2="-0.725" width="0.127" layer="21"/>
+<wire x1="-1.1" y1="0.625" x2="-1.1" y2="0.725" width="0.127" layer="21"/>
+<wire x1="-1.397" y1="0.635" x2="-0.508" y2="0.635" width="0.002540625" layer="41"/>
+<wire x1="1.397" y1="-0.635" x2="0.508" y2="-0.635" width="0.002540625" layer="41"/>
+<wire x1="1.397" y1="0.635" x2="0.508" y2="0.635" width="0.002540625" layer="41"/>
+<wire x1="-1.397" y1="-0.635" x2="-0.508" y2="-0.635" width="0.002540625" layer="41"/>
+</package>
+</packages>
+<symbols>
+<symbol name="VEML6075">
+<description>&lt;h3&gt;Vishay VEML6075&lt;/h3&gt;
+
+&lt;p&gt;UVA and UVB light sensor with I&lt;sup&gt;2&lt;/sup&gt;C interface.&lt;/p&gt;</description>
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.1778" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.1778" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="5.08" width="0.1778" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.1778" layer="94"/>
+<pin name="VDD" x="-10.16" y="2.54" length="short"/>
+<pin name="GND" x="-10.16" y="-2.54" length="short"/>
+<pin name="SDA" x="10.16" y="2.54" length="short" rot="R180"/>
+<pin name="SCL" x="10.16" y="-2.54" length="short" rot="R180"/>
+<text x="-7.62" y="5.334" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-7.62" y="-5.334" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="VEML6075" prefix="U">
+<description>&lt;h3&gt;Vishay VEML6075&lt;/h3&gt;
+
+&lt;p&gt;UVA and UVB light sensor with I&lt;sup&gt;2&lt;/sup&gt;C interface.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="VEML6075" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="VEML6075_A3OP">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="SCL" pad="3"/>
+<connect gate="G$1" pin="SDA" pad="2"/>
+<connect gate="G$1" pin="VDD" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-14149" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -16453,7 +16468,7 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 </classes>
 <parts>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device=""/>
-<part name="U1" library="Qwiic_UV_Sensor_VEML6075" deviceset="VEML6075" device=""/>
+<part name="U1" library="SparkFun-Sensors" deviceset="VEML6075" device=""/>
 <part name="R3" library="SparkFun-Resistors" deviceset="1KOHM" device="-0603-1/10W-1%" value="1k"/>
 <part name="SUPPLY10" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="D1" library="SparkFun-LED" deviceset="LED-RED" device="0603" value="RED"/>
@@ -16498,6 +16513,10 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 <wire x1="0" y1="93.98" x2="248.92" y2="93.98" width="0.2032" layer="97" style="longdash"/>
 <text x="168.656" y="7.112" size="2.54" layer="94" font="vector">Andy England</text>
 <text x="121.92" y="157.48" size="2.54" layer="97" font="vector">Vin: 1.7-3.6V</text>
+<text x="160.02" y="147.32" size="1.778" layer="97" font="vector">Disconnect jumper JP1 to disconnect 
+the I2C pullup resistors. Do this if you 
+have many boards on a bus to save on
+power consumption.</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -16528,8 +16547,8 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 <instance part="U$2" gate="G$1" x="58.42" y="2.54"/>
 <instance part="LOGO1" gate="G$1" x="45.72" y="12.7"/>
 <instance part="U$1" gate="G$1" x="58.42" y="2.54"/>
-<instance part="JP3" gate="G$1" x="246.38" y="30.48"/>
-<instance part="JP4" gate="G$1" x="246.38" y="27.94"/>
+<instance part="JP3" gate="G$1" x="238.76" y="30.48"/>
+<instance part="JP4" gate="G$1" x="238.76" y="27.94"/>
 <instance part="JP2" gate="G$1" x="233.68" y="30.48"/>
 <instance part="JP6" gate="G$1" x="236.22" y="30.48"/>
 <instance part="JP5" gate="G$1" x="236.22" y="27.94"/>
@@ -16696,4 +16715,10 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
