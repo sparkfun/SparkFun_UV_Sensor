@@ -21,11 +21,17 @@ Repository Contents
 
 * **/Documents** - Datasheets
 * **/Hardware** - Eagle design files (.brd, .sch)
+* **/Production** - Production panel files (.brd)
 
 Documentation
 --------------
 * **[Library](https://github.com/sparkfun/SparkFun_VEML6075_Arduino_Library)** - Arduino library.
 * **[Hookup Guide](https://learn.sparkfun.com/tutorials/qwiic-uv-sensor-veml6075-hookup-guide)** - Basic hookup guide.
+
+Product Versions
+----------------
+* [SEN-15089](https://www.sparkfun.com/products/15089)- SparkFun Red Version
+* [SPX-14748](https://www.sparkfun.com/products/14748)- SparkX Version
 
 License Information
 -------------------
