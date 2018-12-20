@@ -39,9 +39,9 @@ License Information
 
 This product is _**open source**_! 
 
-If you have any questions or concerns on licensing, please contact techsupport@sparkfun.com.
+Various bits of the code have different licenses applied. Please use, reuse, and modify these files as you see fit. Please maintain attribution to SparkFun Electronics and release any derivative under the same license.
 
-Please use, reuse, and modify these files as you see fit. Please maintain attribution to SparkFun Electronics and release any derivative under the same license.
+If you have any questions or concerns on licensing, please contact techsupport@sparkfun.com. 
 
 Distributed as-is; no warranty is given.
 
