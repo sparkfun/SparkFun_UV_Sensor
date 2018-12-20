@@ -1,7 +1,7 @@
 SparkFun UV Sensor (Qwiic) - VEML6075
 ========================================
 
-![SparkFun UV Sensor (Qwiic) - VEML6075](https://cdn.sparkfun.com//assets/parts/1/3/4/4/7/15089-SparkFun_UV_Light_Sensor_Breakout_-_VEML6075__Qwiic_-01.jpg)
+[![SparkFun UV Sensor (Qwiic) - VEML6075](https://cdn.sparkfun.com//assets/parts/1/3/4/4/7/15089-SparkFun_UV_Light_Sensor_Breakout_-_VEML6075__Qwiic_-01.jpg)](https://www.sparkfun.com/products/15089)
 
 [*SparkFun UV Sensor (Qwiic) - VEML6075 (SEN-15089)*](https://www.sparkfun.com/products/15089)
 
@@ -25,6 +25,7 @@ Repository Contents
 
 Documentation
 --------------
+* **[Installing an Arduino Library Guide](https://learn.sparkfun.com/tutorials/installing-an-arduino-library)** - Basic information on how to install an Arduino library.
 * **[Library](https://github.com/sparkfun/SparkFun_VEML6075_Arduino_Library)** - Arduino library.
 * **[Hookup Guide](https://learn.sparkfun.com/tutorials/qwiic-uv-sensor-veml6075-hookup-guide)** - Basic hookup guide.
 
