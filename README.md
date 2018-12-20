@@ -1,9 +1,9 @@
 SparkFun UV Sensor (Qwiic) - VEML6075
 ========================================
 
-![SparkFun UV Sensor (Qwiic) - VEML6075](https://cdn.sparkfun.com//assets/parts/1/2/9/8/0/14748-UV_Sensor__Qwiic__-_VEML6075-01.jpg)
+![SparkFun UV Sensor (Qwiic) - VEML6075](https://cdn.sparkfun.com//assets/parts/1/3/4/4/7/15089-SparkFun_UV_Light_Sensor_Breakout_-_VEML6075__Qwiic_-01.jpg)
 
-[*SparkX UV Sensor (Qwiic) - VEML6075 (SPX-14748)*](https://www.sparkfun.com/products/14748)
+[*SparkFun UV Sensor (Qwiic) - VEML6075 (SEN-15089)*](https://www.sparkfun.com/products/15089)
 
 Need to apply some sunscreen? SPF 15? SPF 50? SPF 5000? It's time to consult the Qwiic VEML6075 UV sensor!
 
@@ -14,13 +14,18 @@ The VEML6075 features a simple I<sup>2</sup>C interface, so we stuck it on a [Qw
 Check out our [SparkFun_VEML6075_Arduino_Library repo](https://github.com/sparkfun/SparkFun_VEML6075_Arduino_Library) for a simple Arduino library -- there's example code to configure the sensor, read its UVA and UVB outputs, and generate a UV index output. Stay safe out there this summer!
 
 SparkFun labored with love to create this code. Feel like supporting open source hardware? 
-Buy a [breakout board](https://www.sparkfun.com/products/14748) from SparkFun!
+Buy a [breakout board](https://www.sparkfun.com/products/15089) from SparkFun!
 
 Repository Contents
 -------------------
 
 * **/Documents** - Datasheets
 * **/Hardware** - Eagle design files (.brd, .sch)
+
+Documentation
+--------------
+* **[Library](https://github.com/sparkfun/SparkFun_VEML6075_Arduino_Library)** - Arduino library.
+* **[Hookup Guide](https://learn.sparkfun.com/tutorials/qwiic-uv-sensor-veml6075-hookup-guide)** - Basic hookup guide.
 
 License Information
 -------------------
